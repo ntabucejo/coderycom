@@ -1,3 +1,4 @@
+import Providers from "@core/providers";
 import "@core/styles/globals.css";
 import { Inter } from "@next/font/google";
 
@@ -13,7 +14,13 @@ const Layout = ({ children }: Props) => {
   return (
     <html lang="en">
       <head />
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        <Providers>
+          <div>
+            <main>{children}</main>
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 };
