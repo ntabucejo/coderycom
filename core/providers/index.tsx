@@ -1,5 +1,5 @@
 import Session from "./session";
-import Data from "./data";
+import Query from "./query";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type Props = {
 const Providers = ({ children }: Props) => {
   return (
     <Session>
-      <Data>{children}</Data>
+      <Query>{children}</Query>
     </Session>
   );
 };

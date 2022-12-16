@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Data = ({ children }: Props) => {
+const Query = ({ children }: Props) => {
   const fetcher = async (endpoint: string) => {
     const response = await fetch(endpoint);
     const data = await response.json();
@@ -16,4 +16,4 @@ const Data = ({ children }: Props) => {
   return <SWRConfig value={{ fetcher }}>{children}</SWRConfig>;
 };
 
-export default Data;
+export default Query;
