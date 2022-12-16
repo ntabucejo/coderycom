@@ -1,6 +1,6 @@
 "use client";
 
-import { SWRConfig } from "swr";
+import { SWRConfig, SWRConfiguration } from "swr";
 
 type Props = {
   children: React.ReactNode;
@@ -13,7 +13,15 @@ const Query = ({ children }: Props) => {
     return data;
   };
 
-  return <SWRConfig value={{ fetcher }}>{children}</SWRConfig>;
+  const configuration: SWRConfiguration = {
+    suspense: true,
+    revalidateOnFocus: false,
+    revalidateIfStale: false,
+  };
+
+  return (
+    <SWRConfig value={{ fetcher, ...configuration }}>{children}</SWRConfig>
+  );
 };
 
 export default Query;
