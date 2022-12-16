@@ -11,7 +11,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <html>
+    <html lang="en">
       <head />
       <body className={`${inter.className}`}>{children}</body>
     </html>
