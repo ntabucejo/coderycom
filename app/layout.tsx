@@ -15,7 +15,11 @@ const Layout = ({ children }: Props) => {
     <html lang="en">
       <head />
       <body className={`${inter.className}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div>
+            <main>{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
