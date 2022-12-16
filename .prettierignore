@@ -1,0 +1,9 @@
+node_modules
+public
+prisma
+next-env.d.ts
+.git
+.github
+.cache
+.next
+.vscode
