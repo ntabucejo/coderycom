@@ -13,7 +13,7 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <head />q
+      <head />
       <Providers>
         <body className={`${inter.className}`}>{children}</body>
       </Providers>
