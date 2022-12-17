@@ -26,7 +26,7 @@ const Button = ({
           : ""
       } ${
         className ? className : ""
-      } whitespace-nowrap rounded px-4 py-2 text-sm font-bold`}>
+      } clearance whitespace-nowrap rounded text-sm font-bold`}>
       {children}
     </button>
   );

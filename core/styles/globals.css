@@ -9,4 +9,7 @@
   .contain {
     @apply mx-auto max-w-screen-desktop p-4;
   }
+  .clearance {
+    @apply py-2 px-4;
+  }
 }

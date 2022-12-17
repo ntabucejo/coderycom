@@ -21,7 +21,7 @@ const SignIn = () => {
         className="max-w-md">
         <button
           onClick={() => signIn("google")}
-          className="w-full rounded border py-2 px-4">
+          className="clearance w-full rounded border">
           Google
         </button>
         <Button variant="secondary" onClick={handleClose}>
