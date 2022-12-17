@@ -11,6 +11,7 @@
     "studio": "prisma studio --port 7777"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "@next-auth/prisma-adapter": "^1.0.5",
     "@next/font": "13.0.7",
     "@prisma/client": "^4.7.1",
