@@ -1,4 +1,3 @@
-import Button from "@core/components/elements/button";
 import SignIn from "@core/components/modals/sign-in";
 import Route from "./route";
 import Search from "./search";
