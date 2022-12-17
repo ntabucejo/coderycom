@@ -23,7 +23,7 @@ const Modal = ({ children, state, handleClose, className }: Props) => {
           leave="ease-in duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0">
-          <div className="fixed inset-0 bg-primary-dark bg-opacity-fade backdrop-blur" />
+          <div className="fixed inset-0 bg-primary-dark/fade backdrop-blur" />
         </Transition.Child>
         <div className="fixed inset-0 overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-4">
@@ -38,7 +38,7 @@ const Modal = ({ children, state, handleClose, className }: Props) => {
               <Dialog.Panel
                 className={`${
                   className ? className : ""
-                } w-full space-y-4 overflow-hidden rounded bg-primary-light p-4 shadow-xl transition-all`}>
+                } w-full space-y-4 overflow-hidden rounded bg-primary-light p-4 shadow transition-all`}>
                 {children}
               </Dialog.Panel>
             </Transition.Child>
