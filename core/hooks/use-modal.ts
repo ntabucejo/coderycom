@@ -1,8 +1,8 @@
 import type { State } from "@core/types/modal";
 import { useState } from "react";
 
-const useModal = () => {
-  let [state, setState] = useState<State>("hide");
+const useModal = (initialState: State = "hide") => {
+  let [state, setState] = useState<State>(initialState);
 
   const handleClose = () => {
     setState("hide");
