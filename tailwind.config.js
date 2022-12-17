@@ -18,8 +18,9 @@ module.exports = {
       },
       colors: {
         primary: {
-          light: "#fafafa",
+          light: "white",
           dark: "#171717",
+          brand: "#5865F2",
         },
       },
     },

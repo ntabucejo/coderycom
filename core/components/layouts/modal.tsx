@@ -6,15 +6,16 @@ import type { State } from "@core/types/modal";
 
 type Props = {
   children: React.ReactNode;
+  title: string;
   state: State;
   handleClose: () => void;
   className?: string;
 };
 
-const Modal = ({ children, state, handleClose, className }: Props) => {
+const Modal = ({ children, title, state, handleClose, className }: Props) => {
   return (
     <Transition appear show={state === "show" ? true : false} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={handleClose}>
+      <Dialog as="div" className="relative z-[999]" onClose={handleClose}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -39,6 +40,11 @@ const Modal = ({ children, state, handleClose, className }: Props) => {
                 className={`${
                   className ? className : ""
                 } w-full space-y-4 overflow-hidden rounded bg-primary-light p-4 shadow transition-all`}>
+                <Dialog.Title
+                  as="h3"
+                  className="font-semibold text-primary-dark">
+                  {title}
+                </Dialog.Title>
                 {children}
               </Dialog.Panel>
             </Transition.Child>
