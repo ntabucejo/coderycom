@@ -27,9 +27,9 @@ const Navigation = () => {
       {/* nav links for laptop */}
       <div className=" book:hidden tablet:block">
         <ul className="flex items-center gap-6">
-          <Route name="Home" href="/" />
-          <Route name="What's Popular" href="/" />
-          <Route name="About Us" href="/" />
+          {NavLinks.map((navlink) => (
+            <Route key={navlink.name} name={navlink.name} href={navlink.href} />
+          ))}
         </ul>
       </div>
 
