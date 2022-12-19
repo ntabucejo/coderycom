@@ -4,7 +4,7 @@
 
 @layer components {
   .icon {
-    @apply aspect-square h-4 w-4 flex-none;
+    @apply aspect-square h-5 w-5 flex-none;
   }
   .contain {
     @apply mx-auto max-w-screen-desktop p-4;
