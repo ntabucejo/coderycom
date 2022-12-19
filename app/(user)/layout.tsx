@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
         <aside className="bg-gray-500">sidebar</aside>
         <main>
           <section className="grid grid-rows-[auto,1fr] gap-2">
-            <header className="sticky top-0 z-50 bg-primary-light shadow">
+            <header className="sticky top-0 z-50 bg-primary-light shadow py-2 pl-4 pr-10">
               <Navigation />
             </header>
             <section className="bg-gray-500">{children}</section>
