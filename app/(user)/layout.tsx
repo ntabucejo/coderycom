@@ -8,11 +8,16 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <Providers>
-      <div>
-        <header className="sticky top-0 z-50 bg-primary-light shadow">
-          <Navigation />
-        </header>
-        <main>{children}</main>
+      <div className="grid h-screen grid-cols-[auto,1fr] gap-2">
+        <aside className="bg-gray-500">sidebar</aside>
+        <main>
+          <section className="grid grid-rows-[auto,1fr] gap-2">
+            <header className="sticky top-0 z-50 bg-primary-light shadow">
+              <Navigation />
+            </header>
+            <section className="bg-gray-500">{children}</section>
+          </section>
+        </main>
       </div>
     </Providers>
   );
