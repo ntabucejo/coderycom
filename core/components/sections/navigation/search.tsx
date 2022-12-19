@@ -2,8 +2,8 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const Search = () => {
   return (
-    <div className="clearance flex w-full items-center gap-2 overflow-hidden rounded bg-white">
-      <MagnifyingGlassIcon className="icon" />
+    <div className="clearance flex w-full items-center gap-2 overflow-hidden rounded border bg-white">
+      <MagnifyingGlassIcon className="icon text-gray-400" />
       <input
         type="text"
         placeholder="Search here..."
