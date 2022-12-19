@@ -4,13 +4,12 @@ import Search from "./search";
 
 const Navigation = () => {
   return (
-    <nav className="contain flex items-center gap-4 text-sm">
-      <h1 className="text-2xl font-bold text-primary-brand">Codery</h1>
+    <nav className="flex items-center gap-10 text-sm">
       <Search />
-      <ul className="flex items-center gap-4">
-        <Route name="Explore" href="/" />
-        <Route name="Popular" href="/" />
-        <Route name="About" href="/" />
+      <ul className="flex items-center gap-6">
+        <Route name="Home" href="/" />
+        <Route name="What's Popular" href="/" />
+        <Route name="About Us" href="/" />
       </ul>
       <SignIn />
     </nav>
