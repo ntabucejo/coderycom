@@ -7,7 +7,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Search here..."
-        className="w-full py-2 bg-transparent focus:outline-none"
+        className="w-full bg-transparent py-2 focus:outline-none"
       />
     </div>
   );

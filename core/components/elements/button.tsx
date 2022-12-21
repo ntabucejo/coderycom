@@ -26,7 +26,7 @@ const Button = ({
           : ""
       } ${
         className ? className : ""
-      } clearance whitespace-nowrap rounded text-sm font-bold transition-all duration-300 outline-none`}>
+      } clearance whitespace-nowrap rounded text-sm font-bold outline-none transition-all duration-300`}>
       {children}
     </button>
   );
