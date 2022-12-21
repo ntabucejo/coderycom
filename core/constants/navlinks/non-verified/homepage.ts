@@ -4,7 +4,7 @@ export const NavLinks = [
     href: "#",
   },
   {
-    name: "What's Popular",
+    name: "Explore",
     href: "#",
   },
   {
