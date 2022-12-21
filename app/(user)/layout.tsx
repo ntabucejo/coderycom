@@ -1,4 +1,4 @@
-import NonVerifiedNavigationBar from "@core/components/sections/navigation/non-verified";
+import NavigationBar from "@core/components/sections/navbar";
 import Providers from "@core/providers";
 
 type Props = {
@@ -8,10 +8,10 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <Providers>
-      {/* layout for non verified users*/}
       <div>
         <header className="sticky top-0 z-50 bg-primary-light shadow">
-          <NonVerifiedNavigationBar />
+          {/* @ts-ignore */}
+          <NavigationBar />
         </header>
         <main className="grid grid-rows-[auto,1fr] gap-2">
           <section className="bg-gray-500">{children}</section>
