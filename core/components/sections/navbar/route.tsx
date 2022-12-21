@@ -10,7 +10,7 @@ const Route = ({ name, href }: Props) => {
     <li>
       <Link
         href={href}
-        className="cursor-pointer whitespace-nowrap font-semibold text-primary-dark/fade smooth hover:text-primary-dark">
+        className="smooth cursor-pointer whitespace-nowrap font-semibold text-primary-dark/fade hover:text-primary-dark">
         {name}
       </Link>
     </li>
