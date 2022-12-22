@@ -6,6 +6,7 @@ import Icon from "@core/components/elements/icon";
 import Logo from "@core/components/elements/logo";
 import { BellIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import { signOut } from "next-auth/react";
+import Sidebar from "../sidebar";
 import Route from "./route";
 import routes from "./routes";
 import Search from "./search";
@@ -16,11 +17,13 @@ type Props = {
 
 const VerifiedNavbar = ({ image }: Props) => {
   return (
-    <nav className="contain relative grid items-center gap-2 text-sm tablet:gap-4 laptop:grid-cols-[auto,1fr,auto,auto] laptop:gap-6">
-      {/* sidebar for mobiles */}
+    <nav className="contain relative grid grid-cols-[1fr,auto,auto] items-center gap-5 text-sm laptop:grid-cols-[auto,1fr,auto,auto] laptop:gap-6">
       <Logo />
-      <Search />
-      <div className="flex items-center gap-6">
+      {/* search only for laptop version */}
+      <div className="book:hidden laptop:block">
+        <Search />
+      </div>
+      <div className="flex items-center gap-4 laptop:gap-6">
         {/* navlinks for laptop */}
         <div className="book:hidden laptop:block">
           <ul className="flex items-center gap-6">
@@ -31,7 +34,9 @@ const VerifiedNavbar = ({ image }: Props) => {
               ))}
           </ul>
         </div>
-        <Divider />
+        <div className="book:hidden laptop:block">
+          <Divider />
+        </div>
         <span className="smooth cursor-pointer text-sm font-semibold text-primary-dark/fade hover:text-primary-dark">
           Orders
         </span>
