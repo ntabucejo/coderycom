@@ -1,5 +1,5 @@
 type Props = {
-  Icon: any;
+  Icon: React.ElementType;
 };
 const Icon = ({ Icon }: Props) => {
   return (
