@@ -6,7 +6,6 @@ import Icon from "@core/components/elements/icon";
 import Logo from "@core/components/elements/logo";
 import { BellIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import { signOut } from "next-auth/react";
-import Sidebar from "../sidebar";
 import Route from "./route";
 import routes from "./routes";
 import Search from "./search";
@@ -44,6 +43,7 @@ const VerifiedNavbar = ({ image }: Props) => {
         <Icon Icon={BellIcon} />
       </div>
       <Avatar image={image} />
+      <Button variant="primary" onClick={() => signOut()}>Logout</Button>
     </nav>
   );
 };
