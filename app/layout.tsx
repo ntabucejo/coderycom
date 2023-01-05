@@ -13,7 +13,9 @@ const Layout = ({ children }: Props) => {
   return (
     <html lang="en">
       <head />
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className} bg-primary-light text-primary-dark`}>
+        {children}
+      </body>
     </html>
   );
 };

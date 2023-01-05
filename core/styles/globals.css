@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply aspect-square h-5 w-5 flex-none;
+  }
+  .contain {
+    @apply mx-auto max-w-screen-desktop p-4;
+  }
+  .clearance {
+    @apply py-2 px-4;
+  }
+  .smooth {
+    @apply transition-all duration-300 ease-in;
+  }
+}
