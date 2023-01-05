@@ -1,4 +1,4 @@
-import Navigation from "@core/components/sections/navigation";
+import NavigationBar from "@core/components/sections/navbar";
 import Providers from "@core/providers";
 
 type Props = {
@@ -10,9 +10,12 @@ const Layout = ({ children }: Props) => {
     <Providers>
       <div>
         <header className="sticky top-0 z-50 bg-primary-light shadow">
-          <Navigation />
+          {/* @ts-ignore */}
+          <NavigationBar />
         </header>
-        <main>{children}</main>
+        <main className="grid grid-rows-[auto,1fr] gap-2">
+          <section className="bg-gray-500">{children}</section>
+        </main>
       </div>
     </Providers>
   );
