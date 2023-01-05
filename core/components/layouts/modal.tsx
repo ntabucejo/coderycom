@@ -6,7 +6,7 @@ import type { State } from "@core/types/modal";
 
 type Props = {
   children: React.ReactNode;
-  title: string;
+  title: any;
   state: State;
   handleClose: () => void;
   className?: string;
